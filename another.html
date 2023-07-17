@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty_Login</title>
+    <link rel="stylesheet" href="another.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+                <header>Login</header>
+                <form onsubmit="login(event)" autocomplete="off">
+                    <div class="field input-field">
+                        <input type="email" id="loginEmail" placeholder="Email" class="input" required>
+                    </div>
+
+                    <div class="field input-field">
+                        <input type="password" id="loginPassword" placeholder="Password" class="password" required>
+                        <i class='bx bx-hide eye-icon'></i>
+                    </div>
+
+                    <div class="field button-field">
+                        <button>Login</button>
+                    </div>
+                </form>
+
+        </div>
+        </section>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+            
+            <script>
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+              apiKey: "AIzaSyDf4F8zc_3nuc7bs4kr4a8H2T8rw2JnoWs",
+              authDomain: "login-auth-5572b.firebaseapp.com",
+              projectId: "login-auth-5572b",
+              storageBucket: "login-auth-5572b.appspot.com",
+              messagingSenderId: "749296468280",
+              appId: "1:749296468280:web:a6a4075780271bb12741cd"
+            };
+            
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            
+        </script>
+        <script src="./scripts/auth1.js"></script>
+        
+        <script src="./scripts/script.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

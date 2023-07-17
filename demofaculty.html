@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="demofaculty.css">
+    
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <title>Faculty_Dashboard</title>
+</head>
+<body></body>
+<div class="container">
+    <div class="btnpq">
+        <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTVofDz4bqEg5Huc1bn17UjuZNv2eXJ17hCBi-Gx54_tj7oaMY7_gMIqwgJPCaTh0eaMcd0ALU7LlOv/pubhtml?gid=0&single=true" class="btn" target="_blank">List of Student</a>
+        <a href= https://console.firebase.google.com/project/login-auth-5572b/storage/login-auth-5572b.appspot.com/files/~2FImages class="btn" target="_blank">Assingments</a>
+        <!-- <a href= "" class="tnb">SignOut</a> -->
+    </div>
+		<ul class="navbar">
+			<li><a href="home.html" class="active">Home</a></li>
+			<li><a href="https://docs.google.com/spreadsheets/d/14YZ6VQt6FRMgMiIvkCWrGoHuVIJZZ35l_5LyQt8KNFQ/edit#gid=0" class="active" target="_blank">Downloads</a></li>
+			<li><a href="mailto:shaikhasgar0801@gmail.com"  target="_blank">Help</a></li>
+		</ul>
+
+		<div class="main">
+			<a class="user" onclick="logout()">SignOut<i class="ri-user-fill"></i></a>
+		</div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+      
+      <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDf4F8zc_3nuc7bs4kr4a8H2T8rw2JnoWs",
+        authDomain: "login-auth-5572b.firebaseapp.com",
+        projectId: "login-auth-5572b",
+        storageBucket: "login-auth-5572b.appspot.com",
+        messagingSenderId: "749296468280",
+        appId: "1:749296468280:web:a6a4075780271bb12741cd"
+      };
+      
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      
+  </script>
+  <script src="./scripts/auth3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

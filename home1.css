@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body
+{
+  height: 100vh;
+  width: 100%;
+  background:url(img/2119.jpg)center no-repeat;
+  background-size: cover;
+}
+.container
+{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav
+{
+background:#fff;
+border-radius: 50px;
+padding: 10px;
+box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+position: relative;
+bottom: 26em;
+right: 25em;
+}
+nav ul li
+{
+list-style: none;
+display: inline-block;
+padding: 11px 35px;
+margin: 10px;
+font-size: 20px;
+font-weight: 450;
+color: #777;
+cursor: pointer;
+position: relative;
+z-index: 2;
+transition: color 0.5s;
+font-family: 'Poppins', sans-serif;
+
+}
+nav ul li::after
+{
+  content: '';
+  background: #469ade;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 0;
+  transition: top 0.5s, opacity 0.5s;
+}
+nav ul li:hover
+{
+  color: #fff;
+}
+nav ul li:hover::after{
+  top: 50%;
+  opacity: 1;
+}
+.btn
+{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 450;
+  background: #469ade;
+  width: 160px;
+  padding: 11px;
+  text-align: center;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  -webkit-transition-duration:0.3s;
+  transition-duration:0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+  list-style: none;
+  display: inline-block;
+  margin: 30px;
+}
+.btn:hover, .btn:focus, .btn:active
+{
+box-shadow: 0 0 20px rgba(0,0,0,0.5);
+-webkit-transform: scale(1.1);
+transform: scale(1.1);
+}
+.btnpo
+{
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+top: 20em;
+right: 27em;
+}
+.thought
+{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 22px;
+  position: relative;
+  top: 4em;
+  left: 2.5em;
+  line-height:1.8em;
+  color: #777;
+}
+nav ul li a
+{
+  color: #777;
+  text-decoration: none;
+}
